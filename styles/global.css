@@ -190,6 +190,88 @@ body {
   transform-origin: left;
 }
 
+@media screen and (max-width: 1000px) {
+  .section {
+    padding: 0 2em;
+    margin: 2em auto;
+  }
+  .burger {
+    cursor: pointer;
+    height: 45px;
+    width: 50px;
+    border-radius: 8px;
+    position: fixed;
+    right: 4%;
+    background-color: var(--theme-color);
+    padding: 10px;
+    overflow: hidden;
+  }
+  .burger i {
+    display: block;
+    background-color: var(--primary_color);
+    height: 4px;
+    width: 100%;
+  }
+  .burger i:not(:first-child) {
+    margin-top: 7px;
+  }
+  .burger i:first-child.active-burger {
+    transform: translateY(11px) rotate(45deg);
+  }
+  .burger i:nth-child(2).active-burger {
+    transform: translateX(-140%);
+  }
+  .burger i:nth-child(3).active-burger {
+    transform: translateY(-11px) rotate(-45deg);
+  }
+  .logo a img {
+    width: 150px;
+  }
+  .logo-text {
+    font-size: 1.5rem;
+  }
+  #nav-bar {
+    height: 60px;
+    padding: 0;
+  }
+  .nav-link-container {
+    position: fixed;
+    top: 60px;
+    height: 100vh;
+    width: 100%;
+    left: 0;
+    flex-direction: column;
+    align-items: center;
+    transition: all 0.8s ease;
+    background-color: var(--white_color);
+    z-index: -1;
+    transform: translateY(-100%);
+    -webkit-transform: translateY(-100%);
+    -moz-transform: translateY(-100%);
+    -ms-transform: translateY(-100%);
+    -o-transform: translateY(-100%);
+  }
+  .nav-link-container.active-nav {
+    transform: translateY(0);
+  }
+  .nav-link {
+    font-weight: normal;
+    margin: 1.4em 0;
+    font-size: 1.4rem;
+  }
+  .nav-link a {
+    text-decoration: none;
+  }
+  .theme-nav-link {
+    margin: 0;
+    margin-top: 2em;
+  }
+  .theme-btn {
+    padding: 0.6em 1.2em;
+    font-size: 1.2rem;
+  }
+}
+
 /* !BREADCRUMB */
 .hero-bread-crumb {
   gap: 0.5em;
@@ -284,6 +366,21 @@ body {
 .hero_btn:hover {
   background-color: var(--primary_color);
   color: var(--white_color);
+}
+
+@media screen and (max-width: 1400px) {
+  #hero_section {
+    height: 400px;
+  }
+  .hero_img {
+    object-position: center;
+    height: 100%;
+  }
+}
+@media screen and (max-width: 1000px) {
+  #hero_section {
+    margin-top: 60px;
+  }
 }
 
 /* !FOOTER */

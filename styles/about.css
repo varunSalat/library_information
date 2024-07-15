@@ -73,7 +73,23 @@
   color: var(--white_color);
 }
 
+@media screen and (max-width: 700px) {
+  .au_right_container {
+    margin-top: 0;
+  }
+  .about-us {
+    gap: 2em;
+  }
+  .au_images {
+    gap: 1em;
+  }
+}
+
 @media screen and (max-width: 1520px) {
+  /* !GALLERY SECTION */
+  .gallery_container {
+    grid-template: repeat(4, 250px) / repeat(3, 350px);
+  }
   .au_images img {
     width: 300px;
   }
@@ -82,12 +98,45 @@
   }
 }
 @media screen and (max-width: 1200px) {
+  .gallery_container {
+    grid-template: repeat(4, 230px) / repeat(3, 1fr);
+  }
   .about-us {
     flex-direction: column;
   }
   .au_images {
     width: 100%;
     justify-content: center;
+  }
+}
+@media screen and (max-width: 640px) {
+  .au_images img {
+    width: 200px;
+  }
+}
+@media screen and (max-width: 400px) {
+  .au_images img {
+    width: 140px;
+  }
+}
+@media screen and (max-width: 800px) {
+  .gallery_container {
+    grid-template: repeat(4, 200px) / repeat(2, 50%);
+  }
+  .gallery_img_container:first-child {
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+  }
+  .gallery_img_container:nth-child(2) {
+    grid-column: 2 / -1;
+    grid-row: 1 / 2;
+  }
+  .gallery_img_container:nth-child(4) {
+    grid-column: 1 / -1;
+    grid-row: 2 / 4;
+  }
+  .gallery_img_container:nth-child(5) {
+    grid-row: 4 / -1;
   }
 }
 
@@ -170,6 +219,24 @@
   -o-border-radius: 10px;
 }
 
+@media screen and (max-width: 1250px) {
+  .mission_inner_container {
+    flex-direction: column;
+    padding: 1em;
+  }
+  .left-about-container,
+  .right-about-container {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 450px) {
+  .mission-card {
+    flex-direction: column;
+    align-items: flex-start;
+    margin: 1.8em 0;
+  }
+}
+
 /* !OUR TEAM SECTION */
 
 .our_team_header {
@@ -245,7 +312,7 @@
   place-items: center;
 }
 .fno-container h4 {
-  font-size: 60px;
+  font-size: var(--primary_header);
   color: white;
   font-weight: 500;
 }

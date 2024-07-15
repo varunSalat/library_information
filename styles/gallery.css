@@ -103,7 +103,7 @@
   place-items: center;
 }
 .fno-container h4 {
-  font-size: 60px;
+  font-size: var(--primary_header);
   color: white;
   font-weight: 500;
 }
