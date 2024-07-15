@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>LibraryName |</title>
+    <meta name="description" content="Here we will have library description" />
+    <meta
+      name="keywords"
+      content="LibraryName, library in sector 6, best library in gandhinagar"
+    />
+    <!-- FONT AWESOME -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- !SWIPER JS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
+    />
+    <!---- CUSTOM CSS ---->
+    <link rel="stylesheet" href="./styles/global.css" />
+    <link rel="stylesheet" href="./styles/gallery.css" />
+  </head>
+  <body>
+    <!-- !HEADER SECTION -->
+    <header id="header">
+      <nav id="nav-bar">
+        <div class="logo">
+          <a href="/"
+            ><img src="./imgs/logo.webp" alt="book-logo" />
+            <!-- <span
+              class="logo-text"
+              >Educator</span
+            > -->
+          </a>
+        </div>
+        <div class="burger">
+          <i class="burger-line"></i>
+          <i class="burger-line"></i>
+          <i class="burger-line"></i>
+        </div>
+        <ul class="nav-link-container">
+          <li class="nav-link"><a href="/">Home</a></li>
+          <li class="nav-link"><a href="./about-us.html">About Us</a></li>
+          <li class="nav-link active"><a href="./gallery.html">Gallery</a></li>
+          <li class="nav-link"><a href="./contact-us.html">Contact Us</a></li>
+        </ul>
+      </nav>
+    </header>
+    <!-- !HERO SECTION -->
+    <section id="hero_section">
+      <img class="hero_img" src="./imgs/homepage/homepage.jpg" alt="hero_img" />
+
+      <div class="hero_dis">
+        <h1 class="main_header">Gallery</h1>
+        <div class="hero-bread-crumb flex">
+          <a href="./index.html">Home</a>/
+          <a href="./about-us.html">Gallery</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- !PHOTO GALLERY SECTION -->
+    <section class="section">
+      <div class="section_header our_team_header">
+        <h1>Photo Gallery</h1>
+        <p>Explore our libraries</p>
+      </div>
+      <div class="gallery_nav_container flex">
+        <a class="gal_nav_btn active" data-gal-nav-btn="all">ALL</a>
+        <a class="gal_nav_btn" data-gal-nav-btn="patan">PATAN</a>
+        <a class="gal_nav_btn" data-gal-nav-btn="palanpur">PALANPUR</a>
+        <a class="gal_nav_btn" data-gal-nav-btn="sec-6">Gandhinagar Sec-6</a>
+        <a class="gal_nav_btn" data-gal-nav-btn="sec-11">Gandhinagar Sec-11</a>
+      </div>
+
+      <div class="gal_img_main_container flex">
+        <!-- ?PATAN IMAGES -->
+
+        <div class="gal_img_container" data-location="patan">
+          <figure>
+            <img
+              src="https://firebasestorage.googleapis.com/v0/b/magicmoondecorations-49ef2.appspot.com/o/showcaseImages%2Fengagement%2FMehandi%20Ceremony?alt=media&amp;token=78835ad6-0c59-4b83-bfa0-6bf70d3faf24"
+              alt="Mehandi Ceremony"
+            />
+          </figure>
+          <article>
+            <p>Patan</p>
+          </article>
+        </div>
+        <!-- ?PATAN IMAGES -->
+
+        <div class="gal_img_container" data-location="palanpur">
+          <figure>
+            <img
+              src="https://firebasestorage.googleapis.com/v0/b/magicmoondecorations-49ef2.appspot.com/o/showcaseImages%2Fengagement%2FMehandi%20Ceremony?alt=media&amp;token=78835ad6-0c59-4b83-bfa0-6bf70d3faf24"
+              alt="Mehandi Ceremony"
+            />
+          </figure>
+          <article>
+            <p>palanpur</p>
+          </article>
+        </div>
+
+        <!-- ?SECTOR-6 IMAGES -->
+
+        <div class="gal_img_container" data-location="sec-6">
+          <figure>
+            <img
+              src="https://firebasestorage.googleapis.com/v0/b/magicmoondecorations-49ef2.appspot.com/o/showcaseImages%2Fprivateparty%2FAnniversary%20Parties?alt=media&amp;token=d933cc34-ceaa-42dd-982a-fef7669d5a26"
+              alt="Anniversary Parties"
+            />
+          </figure>
+          <article>
+            <p>Gandhinagar Sec-6</p>
+          </article>
+        </div>
+
+        <!-- ?SECTOR-11 IMAGES -->
+
+        <div class="gal_img_container" data-location="sec-11">
+          <figure>
+            <img
+              src="https://firebasestorage.googleapis.com/v0/b/magicmoondecorations-49ef2.appspot.com/o/showcaseImages%2Fcorporate%2FAnnual%20Day%20Celebrations?alt=media&amp;token=39a5f89d-c97f-49a9-820b-7b569d8a027f"
+              alt="Annual Day Celebrations"
+            />
+          </figure>
+          <article>
+            <p>Gandhinagar Sec-11</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- !Book your seat now -->
+    <section class="fno-section">
+      <div class="fno-container">
+        <div>
+          <h4>Failure is not an option!</h4>
+          <a href="#" class="btn bn_btn"
+            >Book Now <i class="fa-solid fa-arrow-right-long"></i
+          ></a>
+        </div>
+      </div>
+    </section>
+
+    <!-- !FOOTER -->
+    <footer id="footer">
+      <div class="footer_inner_container section flex">
+        <div class="footer_div">
+          <div class="logo_container">
+            <a href="../" class="footer_logo flex"
+              ><img src="./imgs/logo.webp" alt="logo_img"
+            /></a>
+          </div>
+          <p class="footer_div_dis">
+            LibraryName offers a cost-effective and dependable solution for
+            booking bus and cab services, ensuring your travel needs are met
+            with ease and reliability.
+          </p>
+        </div>
+        <div class="footer_div">
+          <p class="footer_div_header">Useful Links</p>
+          <ul>
+            <li><a href="./">Home</a></li>
+            <li><a href="./about-us.html">About Us</a></li>
+            <li><a href="./routes.php">Routes</a></li>
+            <li><a href="./contact-us.php">Contact Us</a></li>
+          </ul>
+        </div>
+        <div class="footer_div">
+          <p class="footer_div_header">Other Links</p>
+          <ul>
+            <li><a href="./privacy-policy.php">Privacy Policy</a></li>
+            <li><a href="./terms-condition.php">Terms &amp; Conditions</a></li>
+            <li><a href="./sitemap.xml">Sitemap</a></li>
+          </ul>
+        </div>
+        <div class="footer_div">
+          <p class="footer_div_header">Our Quick Contacts</p>
+          <div class="quick_contact_form flex">
+            <a
+              href="https://www.instagram.com/lesssgotrippy/?igsh=djFxMWtvZ3Rnc2Zl"
+              target="_blank"
+              ><i class="fa-brands fa-instagram"></i
+            ></a>
+            <a href="https://wa.me/+917009479881" target="_blank"
+              ><i class="fa-brands fa-whatsapp"></i
+            ></a>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- !SCRIPTS-->
+    <script>
+      document.addEventListener("DOMContentLoaded", () => {
+        const buttons = document.querySelectorAll(".gal_nav_btn");
+        const imageContainers = document.querySelectorAll(".gal_img_container");
+
+        buttons.forEach((button) => {
+          button.addEventListener("click", () => {
+            const filter = button.getAttribute("data-gal-nav-btn");
+
+            // Remove 'active' class from all buttons
+            buttons.forEach((btn) => btn.classList.remove("active"));
+            // Add 'active' class to the clicked button
+            button.classList.add("active");
+
+            // Show or hide image containers based on the filter
+            imageContainers.forEach((container) => {
+              if (filter === "all") {
+                container.classList.remove("hidden");
+              } else {
+                if (container.getAttribute("data-location") === filter) {
+                  container.classList.remove("hidden");
+                } else {
+                  container.classList.add("hidden");
+                }
+              }
+            });
+          });
+        });
+      });
+    </script>
+  </body>
+</html>
