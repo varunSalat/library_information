@@ -129,7 +129,7 @@ body {
 }
 
 .logo a img {
-  width: 180px;
+  width: 120px;
 }
 
 .logo-text {
@@ -229,7 +229,7 @@ body {
     transform: translateY(-11px) rotate(-45deg);
   }
   .logo a img {
-    width: 150px;
+    width: 80px;
   }
   .logo-text {
     font-size: 1.5rem;
@@ -394,6 +394,9 @@ body {
   margin-top: 6em;
   background-color: rgb(22, 22, 50);
   margin-bottom: 0;
+}
+.footer_logo img {
+  width: 90px;
 }
 .footer_inner_container {
   justify-content: space-between;

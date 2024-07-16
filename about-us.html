@@ -3,11 +3,11 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>LibraryName |</title>
+    <title>Yug Vandana | Reading Library</title>
     <meta name="description" content="Here we will have library description" />
     <meta
       name="keywords"
-      content="LibraryName, library in sector 6, best library in gandhinagar"
+      content="Yug Vandana, library in sector 6, best library in gandhinagar"
     />
     <!-- FONT AWESOME -->
     <link
@@ -63,7 +63,8 @@
     </section>
     <!-- !ABOUT US SECTION -->
     <section class="section about-us flex">
-      <div class="au_images flex">
+      <!-- !PATAN ABOUT US IMGS -->
+      <div class="au_images flex" data-location="patan">
         <img
           src="./imgs/homepage/about-us-right.jpg"
           id="au_left_img"
@@ -71,6 +72,45 @@
         />
         <img
           src="./imgs/homepage/image3.jpg"
+          id="au_right_img"
+          alt="Jet Ski in Ocean"
+        />
+      </div>
+      <!-- !PALANPUR ABOUT US IMGS -->
+      <div class="au_images hidden flex" data-location="palanpur">
+        <img
+          src="https://lh3.googleusercontent.com/p/AF1QipP1gN4TW7O4CCip8-xT-cNfWvz-NnkqRdkGe5_N=s1360-w1360-h1020"
+          id="au_left_img"
+          alt="Beach and Airplane"
+        />
+        <img
+          src="./imgs/homepage/image3.jpg"
+          id="au_right_img"
+          alt="Jet Ski in Ocean"
+        />
+      </div>
+      <!-- !SECTOR-6 ABOUT US IMGS -->
+      <div class="au_images hidden flex" data-location="sec-6">
+        <img
+          src="https://lh3.googleusercontent.com/p/AF1QipNEkkHvjs6tRJvh5IWzpnOGPCNv9xZwnvqgFebe=s1360-w1360-h1020"
+          id="au_left_img"
+          alt="Beach and Airplane"
+        />
+        <img
+          src="./imgs/homepage/image3.jpg"
+          id="au_right_img"
+          alt="Jet Ski in Ocean"
+        />
+      </div>
+      <!-- !SECTOR-11 ABOUT US IMGS -->
+      <div class="au_images hidden flex" data-location="sec-11">
+        <img
+          src="./imgs/homepage/about-us-right.jpg"
+          id="au_left_img"
+          alt="Beach and Airplane"
+        />
+        <img
+          src="https://lh3.googleusercontent.com/p/AF1QipM3mwTHDrGROIttf7ijkmdpQkHaYhCEagiQ8jEN=s1360-w1360-h1020"
           id="au_right_img"
           alt="Jet Ski in Ocean"
         />
@@ -275,7 +315,55 @@
       </div>
     </section>
 
+    <!-- !YOUTUBE SECTION -->
+    <section class="section" style="display: none">
+      <div class="section_header our_team_header">
+        <h1>Youtube Videos</h1>
+        <p>Visit our libraries virtually</p>
+      </div>
+      <div class="our-team-container">
+        <a class="our-team-card">
+          <iframe
+            src="https://youtu.be/dHzc7QS81fA?si=g1EbS0DmjGVW8mjD"
+            frameborder="0"
+          ></iframe>
+          <div class="our-team-details">
+            <h4>Founder one</h4>
+            <p>Founder &amp; Chairman of Board, Group CEO</p>
+          </div>
+        </a>
+        <a class="our-team-card">
+          <figure>
+            <img
+              src="https://shorturl.at/V8e6X"
+              alt="Founder Two"
+              title="Founder Two"
+              data-toggle="tooltip"
+            />
+          </figure>
+          <div class="our-team-details">
+            <h4>Founder Two</h4>
+            <p>Program Manager – M&amp;A</p>
+          </div>
+        </a>
+        <a class="our-team-card">
+          <figure>
+            <img
+              src="https://shorturl.at/V8e6X"
+              alt="Founder Three"
+              title="Founder Three"
+              data-toggle="tooltip"
+            />
+          </figure>
+          <div class="our-team-details">
+            <h4>Founder Three</h4>
+            <p>Group CFO</p>
+          </div>
+        </a>
+      </div>
+    </section>
     <!-- !OUR TEAM SECTION -->
+
     <section class="section">
       <div class="section_header our_team_header">
         <h1>Our Team</h1>
@@ -349,9 +437,7 @@
             /></a>
           </div>
           <p class="footer_div_dis">
-            LibraryName offers a cost-effective and dependable solution for
-            booking bus and cab services, ensuring your travel needs are met
-            with ease and reliability.
+            Where Knowledge Meets Comfort: Your Perfect Study Sanctuary
           </p>
         </div>
         <div class="footer_div">
@@ -359,7 +445,7 @@
           <ul>
             <li><a href="./">Home</a></li>
             <li><a href="./about-us.html">About Us</a></li>
-            <li><a href="./routes.php">Routes</a></li>
+            <li><a href="./gallery.html">Gallery</a></li>
             <li><a href="./contact-us.php">Contact Us</a></li>
           </ul>
         </div>
@@ -375,12 +461,17 @@
           <p class="footer_div_header">Our Quick Contacts</p>
           <div class="quick_contact_form flex">
             <a
-              href="https://www.instagram.com/lesssgotrippy/?igsh=djFxMWtvZ3Rnc2Zl"
+              href="https://www.instagram.com/yugvandana_library"
               target="_blank"
               ><i class="fa-brands fa-instagram"></i
             ></a>
-            <a href="https://wa.me/+917009479881" target="_blank"
-              ><i class="fa-brands fa-whatsapp"></i
+            <a href="https://t.me/yugvandanalibrary" target="_blank"
+              ><i class="fa-brands fa-telegram"></i
+            ></a>
+            <a
+              href="https://youtube.com/@yugvandanalibrary?si=rvEsqZ8hN_H5WUqD"
+              target="_blank"
+              ><i class="fa-brands fa-youtube"></i
             ></a>
           </div>
         </div>
@@ -393,6 +484,7 @@
       document.addEventListener("DOMContentLoaded", () => {
         const selectElement = document.getElementById("branch");
         const textContainers = document.querySelectorAll(".au_text_container");
+        const aboutUsImgs = document.querySelectorAll(".au_images");
 
         selectElement.addEventListener("change", (e) => {
           const selectedBranch = e.target.value;
@@ -404,10 +496,14 @@
               container.classList.add("hidden");
             }
           });
+          aboutUsImgs.forEach((container) => {
+            if (container.getAttribute("data-location") === selectedBranch) {
+              container.classList.remove("hidden");
+            } else {
+              container.classList.add("hidden");
+            }
+          });
         });
-
-        // Trigger change event on load to show the default selected branch content
-        // selectElement.dispatchEvent(new Event("change"));
       });
     </script>
   </body>
