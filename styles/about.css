@@ -59,6 +59,23 @@
   font-weight: normal;
   color: var(--secondary_black_color);
 }
+
+.select_branch_container {
+  margin-top: 2em;
+  gap: 2em;
+}
+.select_branch_container select {
+  padding: 0.5em 1em;
+  border: 1px solid var(--primary_color);
+  font-size: var(--body-text);
+  background-color: transparent;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+}
+
 .au_text_container {
   margin-top: 2em;
   font-size: var(--body_text);
@@ -82,6 +99,14 @@
   }
   .au_images {
     gap: 1em;
+  }
+  .select_branch_container {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.5em;
+  }
+  .select_branch_container select {
+    width: 100%;
   }
 }
 
@@ -160,10 +185,12 @@
 }
 .section-header-5 {
   color: rgb(107, 171, 255);
+  font-size: var(--tertiary_header);
+  margin-bottom: 0.5em;
 }
 .second-section-header-5 {
   color: white;
-  font-size: 2.5rem;
+  font-size: var(--primary_header);
 }
 .mission-card-container {
   margin-top: 2em;
@@ -192,8 +219,8 @@
   color: white;
 }
 .mission-card-right h3 {
-  margin-bottom: 0.5em;
-  font-size: 1.8rem;
+  margin: 0.5em 0;
+  font-size: var(--secondary_header);
 }
 .mission-card-right p {
   line-height: 1.5em;
@@ -228,12 +255,15 @@
   .right-about-container {
     width: 100%;
   }
+  .mission-card {
+    width: 100%;
+    margin: 0;
+  }
 }
 @media screen and (max-width: 450px) {
   .mission-card {
     flex-direction: column;
     align-items: flex-start;
-    margin: 1.8em 0;
   }
 }
 

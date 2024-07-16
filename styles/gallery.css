@@ -81,6 +81,25 @@
 .hidden {
   display: none;
 }
+@media screen and (max-width: 600px) {
+  .gal_img_main_container {
+    margin-top: 2em;
+  }
+  .gallery_nav_container {
+    gap: 1em;
+  }
+  .gal_img_container {
+    padding: 0.5em;
+  }
+  .gal_img_container figure {
+    height: auto;
+    max-height: 400px;
+    overflow: hidden;
+  }
+  .gal_img_container article {
+    margin-top: 0;
+  }
+}
 
 /* !BOOK YOUR SEAT NOW SECTION */
 .fno-section {

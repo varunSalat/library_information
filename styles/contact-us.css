@@ -102,3 +102,51 @@
 .hidden {
   display: none;
 }
+
+@media screen and (max-width: 800px) {
+  .contact_us_card {
+    flex-direction: column;
+  }
+  .cu_action_btn_container {
+    flex-direction: column;
+  }
+}
+@media screen and (max-width: 600px) {
+  .gal_img_main_container {
+    margin-top: 2em;
+  }
+  .gallery_nav_container {
+    gap: 1em;
+  }
+  .gal_img_container {
+    padding: 0.5em;
+  }
+  .gal_img_container figure {
+    height: auto;
+    max-height: 400px;
+    overflow: hidden;
+  }
+  .gal_img_container article {
+    margin-top: 0;
+  }
+}
+@media screen and (max-width: 470px) {
+  .contact_us_card {
+    gap: 1em;
+  }
+  .contact_us_card figure {
+    min-width: unset;
+  }
+  .contact_us_card figure {
+    max-height: 300px;
+    overflow: hidden;
+    height: fit-content;
+  }
+  .contact_us_card figure img {
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+  }
+}

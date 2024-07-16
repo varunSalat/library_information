@@ -24,6 +24,23 @@
   margin: 1em 0;
 }
 
+@media screen and (max-width: 550px) {
+  .library_timing {
+    flex-direction: column;
+    height: 100%;
+    padding-top: 1em;
+  }
+  .lt_left_container,
+  .lt_right_container {
+    width: 100%;
+    align-items: flex-start;
+  }
+  .lt_left_container {
+    border-right: 0;
+    border-bottom: 1px solid var(--white_color);
+  }
+}
+
 /* !ABOUT US SECTION */
 .about-us {
   align-items: flex-start;
@@ -209,7 +226,11 @@
     var(--primary_color)
   );
 }
-
+@media screen and (max-width: 500px) {
+  .testi_main_container {
+    padding: 2em 0;
+  }
+}
 /* !GALLERY SECTION */
 .gallery_container {
   margin: 0 auto;
@@ -275,7 +296,7 @@
 }
 @media screen and (max-width: 800px) {
   .gallery_container {
-    grid-template: repeat(4, 200px) / repeat(2, 50%);
+    grid-template: repeat(4, 120px) / repeat(2, 50%);
   }
   .gallery_img_container:first-child {
     grid-column: 1 / 2;
