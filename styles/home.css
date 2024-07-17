@@ -188,7 +188,7 @@
   padding-bottom: 50px;
   margin-top: 2em;
 }
-.swiper-pagination span {
+.testi_pagination span {
   background-color: var(--white_color) !important;
 }
 .swiper-slide {
@@ -209,7 +209,26 @@
   -o-border-radius: 10px;
   position: relative;
 }
-
+.swiper-slide figure {
+  height: 100%;
+  width: 100%;
+}
+.swiper-slide figure {
+  overflow: hidden;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+}
+.swiper-slide figure img {
+  width: 100%;
+  height: 100%;
+}
+.yt_slide {
+  border: 1px solid var(--secondary_black_color);
+  height: 250px;
+}
 .client_name {
   position: absolute;
   right: 1em;
@@ -343,327 +362,9 @@
   }
 }
 
-/* !FEES STRUCTURE */
-
-.select_branch_container {
-  margin-top: 2em;
-  flex-direction: column;
-  align-items: flex-end;
-  gap: 1em;
-}
-.select_branch_container select {
-  padding: 0.5em 1em;
-  border: 1px solid var(--primary_color);
-  font-size: var(--body-text);
-  background-color: transparent;
-  border-radius: 5px;
-  -webkit-border-radius: 5px;
-  -moz-border-radius: 5px;
-  -ms-border-radius: 5px;
-  -o-border-radius: 5px;
-}
-
-.table-container {
-  width: 100%;
-  overflow-x: auto;
-  margin-top: 2em;
-}
-
-.fee-structure {
-  border-collapse: collapse;
-  width: 100%;
-  margin: 20px auto;
-  background-color: #fff;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-}
-
-.fee-structure th,
-.fee-structure td {
-  border: 1px solid #ddd;
-  padding: 8px;
+/* !<!-- !VIEW US ON YOUTUBE --> */
+.vy_header {
   text-align: center;
-}
-
-.fee-structure th {
-  background-color: #4caf50;
-  color: white;
-  font-weight: bold;
-}
-
-.fee-structure .days {
-  background-color: #ffb74d;
-  font-weight: bold;
-}
-
-.fee-structure tr:nth-child(even) {
-  background-color: #f9f9f9;
-}
-
-.fee-structure tr:hover {
-  background-color: #f1f1f1;
-}
-
-.fee-structure .note {
-  background-color: #000;
-  color: #fff;
-  font-weight: bold;
-}
-
-tfoot td {
-  font-size: 0.9em;
-}
-.mobile_price_label {
-  display: none;
-}
-.price {
-  width: 100%;
-  text-align: center;
-}
-.day-para {
-  justify-content: center;
-  gap: 0.5em;
-}
-
-@media screen and (max-width: 768px) {
-  .fee-structure,
-  .fee-structure thead,
-  .fee-structure tbody,
-  .fee-structure th,
-  .fee-structure td,
-  .fee-structure tr {
-    display: block;
-  }
-  .day-para {
-    justify-content: space-between;
-  }
-  .mobile_tbl_heading {
-    background-color: #ffb74d;
-  }
-
-  .mobile_price_label {
-    display: block;
-  }
-  .price {
-    width: fit-content;
-  }
-  .fee-structure .days {
-    background-color: transparent;
-    /* font-weight: normal; */
-  }
-  .fee-structure td {
-    padding: 10px;
-    text-align: left;
-    position: relative;
-  }
-  .price-para {
-    justify-content: space-between;
-  }
-  .fees_heading {
-    display: none !important;
-  }
-
-  .fee-structure td:before {
-    content: attr(data-label);
-    position: absolute;
-    left: 10px;
-    width: calc(100% - 20px);
-    text-align: left;
-    font-weight: bold;
-  }
-}
-
-@media screen and (max-width: 480px) {
-  .fee-structure {
-    min-width: 300px;
-  }
-}
-
-/* ?PALANPUR STYLES */
-
-.table-container {
-  width: 100%;
-  overflow-x: auto;
-}
-
-.fees-structure {
-  border-collapse: collapse;
-  width: 100%;
-  margin: 20px auto;
-  background-color: #fff;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  min-width: 600px;
-}
-
-.fees-structure th,
-.fees-structure td {
-  border: 1px solid #ddd;
-  padding: 8px;
-  text-align: center;
-}
-
-.fees-structure th {
-  background-color: #4caf50;
-  color: white;
-  font-weight: bold;
-}
-
-.fees-structure .full-day-reserve {
-  background-color: #009688;
-  color: white;
-}
-
-.fees-structure .shift-time {
-  background-color: #2196f3;
-  color: white;
-}
-
-.fees-structure .note {
-  background-color: #000;
-  color: white;
-  font-weight: bold;
-}
-
-.fees-structure tr:nth-child(even) {
-  background-color: #f9f9f9;
-}
-
-.fees-structure tr:hover {
-  background-color: #f1f1f1;
-}
-
-@media screen and (max-width: 768px) {
-  .fees-structure,
-  .fees-structure thead,
-  .fees-structure tbody,
-  .fees-structure th,
-  .fees-structure td,
-  .fees-structure tr,
-  .fees-structure tfoot {
-    display: block;
-  }
-
-  .fees-structure thead tr {
-    display: none;
-  }
-
-  .fees-structure td {
-    padding: 10px;
-    text-align: left;
-    position: relative;
-  }
-
-  .fees-structure td:before {
-    content: attr(data-label);
-    position: absolute;
-    left: 10px;
-    width: calc(100% - 20px);
-    text-align: left;
-    font-weight: bold;
-  }
-
-  .fees-structure td:last-child {
-    border-bottom: 2px solid #4caf50;
-  }
-}
-
-@media screen and (max-width: 480px) {
-  .fees-structure {
-    min-width: 300px;
-  }
-}
-
-.shifting-time {
-  border-collapse: collapse;
-  width: 80%;
-  margin: 20px auto;
-  background-color: #fff;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  min-width: 600px;
-}
-
-.shifting-time th,
-.shifting-time td {
-  border: 1px solid #ddd;
-  padding: 8px;
-  text-align: center;
-}
-
-.shifting-time th {
-  background-color: #4caf50;
-  color: white;
-  font-weight: bold;
-}
-
-.shifting-time .sub-header {
-  background-color: #ffa726;
-  font-weight: bold;
-}
-
-.shifting-time .sub-sub-header {
-  background-color: #42a5f5;
-  font-weight: bold;
-  color: white;
-}
-
-.shifting-time tr:nth-child(even) {
-  background-color: #f9f9f9;
-}
-
-.shifting-time tr:hover {
-  background-color: #f1f1f1;
-}
-
-@media screen and (max-width: 768px) {
-  .shifting-time,
-  .shifting-time thead,
-  .shifting-time tbody,
-  .shifting-time th,
-  .shifting-time td,
-  .shifting-time tr {
-    display: block;
-  }
-  .shifting-time {
-    width: 100%;
-  }
-  .shifting-time thead tr {
-    display: none;
-  }
-
-  .shifting-time td {
-    padding: 10px;
-    text-align: left;
-    position: relative;
-  }
-
-  .shifting-time td:before {
-    content: attr(data-label);
-    position: absolute;
-    left: 10px;
-    width: calc(100% - 20px);
-    text-align: left;
-    font-weight: bold;
-  }
-
-  .shifting-time td:nth-child(4) {
-    border-bottom: 1px solid #ddd;
-  }
-
-  .shifting-time td:last-child {
-    border-bottom: 2px solid #4caf50;
-  }
-}
-
-@media screen and (max-width: 480px) {
-  .shifting-time {
-    min-width: 300px;
-  }
-}
-.download_pdf_container {
-  justify-content: flex-end;
-}
-.download_pdf_btn {
-  background-color: var(--primary_color);
-  color: var(--white_color);
 }
 
 /* !BOOK YOUR SEAT NOW SECTION */
