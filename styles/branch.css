@@ -7,8 +7,8 @@ main:nth-child(even) .branch-about-us {
   flex-direction: row-reverse;
 }
 .bau_images {
-  min-width: 500px;
-  height: 550px;
+  min-width: 400px;
+  height: 450px;
   overflow: hidden;
   border-radius: 10px;
   -webkit-border-radius: 10px;
@@ -47,14 +47,17 @@ main:nth-child(even) .branch-about-us {
     width: min(500px, 100%);
     margin: 0 auto;
     height: fit-content;
-    max-height: 500px;
+    max-height: 300px;
   }
   .branch-about-us {
-    gap: 4em;
+    gap: 2em;
     flex-direction: column;
   }
   main:nth-child(even) .branch-about-us {
     flex-direction: column;
+  }
+  .bau_text_container {
+    margin-top: 1em;
   }
 }
 

@@ -183,6 +183,9 @@
   .au_images img {
     width: 200px;
   }
+  .au_text_container p:nth-child(2) {
+    display: block;
+  }
 }
 @media screen and (max-width: 500px) {
   .au_images img {
