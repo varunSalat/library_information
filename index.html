@@ -57,12 +57,83 @@
     </header>
     <!-- !HERO SECTION -->
     <section id="hero_section">
-      <img class="hero_img" src="./imgs/homepage/homepage.jpg" alt="hero_img" />
+      <div class="hero-swiper swiper">
+        <div class="hero-wrapper swiper-wrapper">
+          <!-- SLIDE-1 -->
+          <div class="hero-slide swiper-slide">
+            <img
+              src="./imgs/homepage/videos/2.jpg"
+              alt="hero-img-1"
+              class="hero-img"
+            />
+            <div class="hero_dis">
+              <h1 class="main_header">Yug Vandana Gandhinagar</h1>
+              <p class="secondary_header">Increase Your Reading Capacity</p>
+              <a
+                href="https://youtu.be/Bb-XDbiWLtw?si=HGI5ztacT9QmWxTp"
+                class="btn hero_btn"
+                target="_blank"
+                >Watch Video<i class="fa-regular fa-circle-play"></i
+              ></a>
+            </div>
+          </div>
+          <!-- SLIDE-2 -->
+          <div class="hero-slide swiper-slide">
+            <img
+              src="./imgs/homepage/videos/1.jpg"
+              alt="hero-img-1"
+              class="hero-img"
+            />
+            <div class="hero_dis">
+              <h1 class="main_header">Yug Vandana Library</h1>
+              <p class="secondary_header">Increase Your Reading Capacity</p>
+              <a
+                href="https://youtu.be/58rbhWCmYDE?si=fMSxEnGSXZmQ3cG6"
+                class="btn hero_btn"
+                target="_blank"
+                >Watch Video<i class="fa-regular fa-circle-play"></i
+              ></a>
+            </div>
+          </div>
+          <!-- SLIDE-3 -->
+          <div class="hero-slide swiper-slide">
+            <img
+              src="./imgs/homepage/videos/3.jpg"
+              alt="hero-img-1"
+              class="hero-img"
+            />
+            <div class="hero_dis">
+              <h1 class="main_header">Yugvandana Library Palanpur</h1>
+              <p class="secondary_header">Increase Your Reading Capacity</p>
+              <a
+                href="https://youtu.be/-3Kb8Dvb06w?si=KcC8hzBrCqZNgWpJ"
+                class="btn hero_btn"
+                target="_blank"
+                >Watch Video<i class="fa-regular fa-circle-play"></i
+              ></a>
+            </div>
+          </div>
+          <!-- SLIDE-4 -->
+          <div class="hero-slide swiper-slide">
+            <img
+              src="./imgs/homepage/videos/4.jpg"
+              alt="hero-img-1"
+              class="hero-img"
+            />
 
-      <div class="hero_dis">
-        <h1 class="main_header">Welcome to Yug Vandana</h1>
-        <p class="secondary_header">Increase Your Reading Capacity</p>
-        <a href="./about-us.html" class="btn hero_btn">Contact Us</a>
+            <div class="hero_dis">
+              <h1 class="main_header">Yugvandana Library Palanpur</h1>
+              <p class="secondary_header">Increase Your Reading Capacity</p>
+              <a
+                href="https://youtu.be/58rbhWCmYDE?si=dI077tBMhSP4rHsT"
+                class="btn hero_btn"
+                target="_blank"
+                >Watch Video<i class="fa-regular fa-circle-play"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-pagination hero-pagination"></div>
       </div>
     </section>
     <!-- !LIBRARY TIMINGS -->
@@ -295,7 +366,7 @@
             class="swiper-slide yt_slide"
           >
             <figure>
-              <img src="./imgs/homepage/videos/1.jpg" alt="video-1" />
+              <img src="./imgs/homepage/videos/1-old.jpg" alt="video-1" />
             </figure>
           </a>
           <a
@@ -416,10 +487,21 @@
         pagination: {
           el: ".swiper-pagination",
         },
-        // autoplay: {
-        //   delay: 1000, // Delay between transitions in milliseconds
-        //   disableOnInteraction: false, // Keep autoplay running even after user interaction
-        // },
+        autoplay: {
+          delay: 2000, // Delay between transitions in milliseconds
+          disableOnInteraction: false, // Keep autoplay running even after user interaction
+        },
+      });
+
+      var swiper = new Swiper(".hero-swiper", {
+        loop: true,
+        pagination: {
+          el: ".swiper-pagination",
+        },
+        autoplay: {
+          delay: 2500, // Delay between transitions in milliseconds
+          disableOnInteraction: false, // Keep autoplay running even after user interaction
+        },
       });
     </script>
     <!-- !SCRIPTS-->

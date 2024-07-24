@@ -1,29 +1,51 @@
-/* !LIBRARY TIMINGS */
-.library_timing {
-  background-color: var(--primary_color);
-  height: 200px;
+/* !WHAT WE OFFER SECTION */
+#wwo_header {
+  text-align: center;
 }
-.library_timing {
-  padding: 0 5%;
+.what_we_offer_container {
+  gap: 2em;
+  justify-content: center;
+  flex-wrap: wrap;
+  width: 100%;
+  margin: 4em 0;
 }
-.lt_left_container,
-.lt_right_container {
-  width: 50%;
-  flex-direction: column;
-  align-items: center;
-  color: var(--white_color);
+.what_we_offer_card {
+  text-decoration: none;
+  cursor: pointer;
+  min-height: 250px;
+  width: min(350px, 100%);
+  border: 1px solid var(--secondary_black_color);
+  color: var(--secondary_black_color);
+  padding: 1em;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
 }
-.lt_left_container {
-  border-right: 1px solid var(--white_color);
+.what_we_offer_header {
+  justify-content: space-between;
 }
-.lt_inner_container h1 {
-  font-size: var(--primary_header);
-  margin-bottom: 0.2em;
+.what_we_offer_dis {
+  margin-top: 1em;
 }
-.lt_time_container {
-  margin: 1em 0;
+.what_we_offer_header img {
+  width: 60px;
+  object-fit: cover;
+  object-position: center;
 }
-
+.what_we_offer_dis h3 {
+  font-size: var(--tertiary_header);
+  font-weight: normal;
+  text-decoration: none;
+  margin-bottom: 0.5em;
+  color: var(--font-main-color);
+}
+.what_we_offer_dis p {
+  text-decoration: none;
+  font-size: var(--body_text);
+  color: var(--font-second-color);
+}
 /* !ABOUT US SECTION */
 .about-us {
   align-items: flex-start;
@@ -90,10 +112,8 @@
   background-color: var(--primary_color);
   color: var(--white_color);
 }
-
 @media screen and (max-width: 700px) {
   .au_right_container {
-    margin-top: 0;
   }
   .about-us {
     gap: 2em;

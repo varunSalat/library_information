@@ -1,4 +1,64 @@
+#hero_section {
+  /* background-color: red; */
+  /* height: 80vh; */
+}
+#hero_section::before {
+  display: none;
+}
+.hero-swiper {
+  height: 100%;
+  width: 100%;
+  padding-top: 0 !important;
+  padding-bottom: 0 !important;
+  margin-top: 0 !important;
+}
+.hero-wrapper {
+  height: 100%;
+  width: 100%;
+  /* background-color: aqua; */
+}
+.hero-slide {
+  position: relative !important;
+  height: 100%;
+  width: 100%;
+  background-color: white;
+  height: 100% !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  border: none !important;
+  border-radius: 0 !important;
+  -webkit-border-radius: 0 !important;
+  -moz-border-radius: 0 !important;
+  -ms-border-radius: 0 !important;
+  -o-border-radius: 0 !important;
+}
+.hero-img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  /* object-position: center; */
+}
+.hero-slide::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+  z-index: 1;
+}
+.hero_btn {
+  display: flex !important;
+  gap: 0.5em;
+  width: fit-content;
+  margin: 0 auto;
+}
+.hero-pagination .swiper-pagination-bullet {
+  background-color: var(--white_color);
+}
 /* !LIBRARY TIMINGS */
+
 .library_timing {
   background-color: var(--primary_color);
   height: 200px;
