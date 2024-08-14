@@ -135,7 +135,7 @@
   text-align: center;
 }
 .wwo_container {
-  margin-top: 4em;
+  margin-top: 2em;
   gap: 2em;
   flex-wrap: wrap;
   justify-content: space-between;
@@ -333,7 +333,7 @@
 }
 @media screen and (max-width: 640px) {
   .au_images img {
-    width: 200px;
+    width: 170px;
   }
 }
 @media screen and (max-width: 400px) {
