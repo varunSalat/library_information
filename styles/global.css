@@ -9,6 +9,7 @@
   scroll-behavior: smooth;
   --primary_color: #ff5e00;
   --primary_color: #2596be;
+  --primary_color: #0000a5;
   --black_color: #000;
   --secondary_black_color: #5c5c5c;
   --tertiary_black_color: #929292;
@@ -372,8 +373,9 @@ body {
   cursor: pointer;
   display: inline-block;
   margin-top: 0.5em;
-  background-color: var(--primary_color);
-  color: var(--white_color);
+  font-weight: 600;
+  background-color: var(--white_color);
+  color: var(--black_color);
   transition: var(--three_mili);
   -webkit-transition: var(--three_mili);
   -moz-transition: var(--three_mili);
@@ -430,7 +432,7 @@ body {
 }
 .footer_div_header {
   font-size: var(--tertiary_header);
-  color: var(--primary_color);
+  color: var(--white_color);
   margin-bottom: 0.5em;
   display: block;
 }
@@ -439,7 +441,7 @@ body {
   margin: 1em 0;
 }
 .footer_div ul li a {
-  color: var(--white_color);
+  color: var(--tertiary_black_color);
   font-size: var(--body_text);
 }
 .quick_contact_form {
@@ -448,6 +450,10 @@ body {
 }
 .quick_contact_form a {
   font-size: var(--primary_header);
+  color: var(--white_color);
+}
+
+.footer_div .logo-text {
   color: var(--white_color);
 }
 
