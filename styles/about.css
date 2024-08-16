@@ -368,7 +368,11 @@
 .our-team-details p {
   font-size: var(--label-text);
 }
-
+@media screen and (max-width: 800px) {
+  .our-team-container {
+    margin-top: 2em;
+  }
+}
 /* !BOOK YOUR SEAT NOW SECTION */
 .fno-section {
   height: 350px;

@@ -210,7 +210,7 @@ body {
 @media screen and (max-width: 1000px) {
   .section {
     padding: 0 1em;
-    margin: 2em auto;
+    margin: 4em auto;
   }
   .burger {
     cursor: pointer;
