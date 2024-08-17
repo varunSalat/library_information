@@ -84,6 +84,7 @@ main:nth-child(even) .branch-about-us {
   .branch-about-us {
     gap: 2em;
     flex-direction: column;
+    margin-top: 2em;
   }
   main:nth-child(even) .branch-about-us {
     flex-direction: column;

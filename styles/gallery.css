@@ -87,6 +87,7 @@
   }
   .gallery_nav_container {
     gap: 1em;
+    margin-top: 2em;
   }
   .gal_img_container {
     padding: 0.5em;

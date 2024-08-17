@@ -277,6 +277,9 @@
   .testi_main_container {
     padding: 2em 0;
   }
+  .swiper {
+    margin-top: 0;
+  }
 }
 /* !GALLERY SECTION */
 .gallery_container {
@@ -344,6 +347,7 @@
 @media screen and (max-width: 800px) {
   .gallery_container {
     grid-template: repeat(4, 120px) / repeat(2, 50%);
+    margin-top: 2em;
   }
   .gallery_img_container:first-child {
     grid-column: 1 / 2;
