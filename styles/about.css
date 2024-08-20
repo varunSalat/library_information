@@ -31,10 +31,12 @@
 }
 .au_images {
   gap: 2em;
+  width: min(450px, 95%);
+  min-width: 500px;
 }
 .au_images img {
-  width: 350px;
-  height: 470px;
+  height: 450px;
+  width: 100%;
   border-radius: 10px;
   -webkit-border-radius: 10px;
   -moz-border-radius: 10px;
@@ -121,15 +123,9 @@
   .au_images {
     gap: 1em;
   }
-  .au_images img {
-    height: 200px !important;
-  }
 }
 
 @media screen and (max-width: 1520px) {
-  .au_images img {
-    width: 300px;
-  }
   .au_text_container p:nth-child(2) {
     display: none;
   }
@@ -143,26 +139,13 @@
     justify-content: center;
   }
 }
-@media screen and (max-width: 640px) {
-  .au_images img {
-    width: 200px;
-  }
-}
-@media screen and (max-width: 400px) {
-  .au_images img {
-    width: 140px;
-  }
-}
 
 @media screen and (max-width: 1520px) {
   /* !GALLERY SECTION */
   .gallery_container {
     grid-template: repeat(4, 250px) / repeat(3, 350px);
   }
-  .au_images img {
-    width: 300px;
-    height: 400px;
-  }
+
   .au_text_container p:nth-child(2) {
     display: none;
   }
@@ -180,18 +163,14 @@
   }
 }
 @media screen and (max-width: 640px) {
-  .au_images img {
-    width: 200px;
-  }
   .au_text_container p:nth-child(2) {
     display: block;
   }
-}
-@media screen and (max-width: 500px) {
-  .au_images img {
-    width: 150px;
+  .au_images {
+    min-width: auto;
   }
 }
+
 @media screen and (max-width: 800px) {
   .gallery_container {
     grid-template: repeat(4, 200px) / repeat(2, 50%);
@@ -315,63 +294,6 @@
   }
 }
 
-/* !OUR SERVICES */
-
-.how_we_different_container {
-  justify-content: center;
-  gap: 2em;
-  flex-wrap: wrap;
-  margin-top: 4em;
-  margin-bottom: 2em;
-}
-.how_we_different_card {
-  width: min(350px, 100%);
-  min-height: 280px;
-  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
-  padding: 1em;
-  border-radius: 10px;
-}
-.how_we_different_icon_card {
-  margin-bottom: 1em;
-  display: grid;
-  place-items: center;
-  height: 50px;
-  width: 50px;
-  color: #fff;
-  font-size: var(--tertiary_header);
-  border-radius: 50%;
-}
-.how_we_different_card:first-child .how_we_different_icon_card,
-.how_we_different_card:nth-child(6) .how_we_different_icon_card,
-.how_we_different_card:nth-child(8) .how_we_different_icon_card {
-  background-color: var(--primary_color);
-}
-.how_we_different_card:nth-child(2) .how_we_different_icon_card,
-.how_we_different_card:nth-child(7) .how_we_different_icon_card {
-  background-color: #fe4f4f;
-}
-.how_we_different_card:nth-child(3) .how_we_different_icon_card,
-.how_we_different_card:nth-child(5) .how_we_different_icon_card {
-  background-color: #6acd85;
-}
-.how_we_different_card:nth-child(4) .how_we_different_icon_card,
-.how_we_different_card:nth-child(9) .how_we_different_icon_card {
-  background-color: #6572ff;
-}
-
-.how_we_different_icon_card img {
-  width: 30px;
-}
-.how_we_different_card h2 {
-  font-size: var(--tertiary_header);
-  color: var(--);
-}
-.how_we_different_card p {
-  color: var(--font-second-color);
-  font-size: var(--body_text);
-  margin-top: 1em;
-}
-
 /* !OUR TEAM SECTION */
 
 .our_team_header {
@@ -385,44 +307,31 @@
   justify-content: center;
   flex-wrap: wrap;
 }
-.our-team-card {
-  width: min(300px, 100%);
-  position: relative;
-  padding-top: 1em;
-  height: 320px;
+.team-member {
+  width: min(380px, 100%);
+  border: 1px solid #f5f5f5;
+  border-radius: 20px;
   overflow: hidden;
-  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
-  border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 0px 1px;
 }
-.initial-container {
-  background-color: #fe4f4f;
-  height: 100px;
-  width: 100px;
-  margin: 0 auto;
-  display: grid;
-  place-items: center;
-  border-radius: 50%;
-  font-size: var(--secondary_header);
-  color: var(--white_color);
+.team-member figure {
+  width: 100%;
+  height: 350px;
+  overflow: hidden;
 }
-.our-team-details {
-  /* text-align: center; */
-  margin-top: 1em;
-  padding: 0 1em;
+.team-member figure img {
+  width: 100%;
 }
-.our-team-details h3 {
-  font-size: var(--secondary_header);
+.member-info {
+  padding: 1em;
+  border-top: 1px solid #f5f5f5;
 }
-.our-team-details h4 {
+.member-info h3 {
+  font-size: var(--tertiary_header);
+  margin-bottom: 0.5em;
+}
+.member-info p {
   color: var(--secondary_black_color);
-  font-size: var(--body-text);
-  margin-top: 0.5em;
-  margin-bottom: 1em;
-}
-.our-team-details p {
-  color: var(--secondary_black_color);
-  font-size: var(--body-text);
-  text-align: left;
 }
 @media screen and (max-width: 800px) {
   .our-team-container {

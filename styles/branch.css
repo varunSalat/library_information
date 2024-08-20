@@ -141,10 +141,10 @@ main:nth-child(even) .branch-about-us {
   font-weight: bold;
 }
 
-.fee-structure .days {
+/* .fee-structure .days {
   background-color: #ffb74d;
   font-weight: bold;
-}
+} */
 
 .fee-structure tr:nth-child(even) {
   background-color: #f9f9f9;
@@ -157,6 +157,10 @@ main:nth-child(even) .branch-about-us {
 .fee-structure .note {
   background-color: #000;
   color: #fff;
+  font-weight: bold;
+}
+.none-reserved {
+  background-color: #ffa726;
   font-weight: bold;
 }
 
@@ -199,7 +203,7 @@ tfoot td {
   }
   .fee-structure .days {
     background-color: transparent;
-    /* font-weight: normal; */
+    font-weight: normal;
   }
   .fee-structure td {
     padding: 10px;

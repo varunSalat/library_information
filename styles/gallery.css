@@ -52,10 +52,12 @@
   -ms-transition: var(--three_mili);
   -o-transition: var(--three_mili);
 }
-.gal_img_container figure {
+.gal_img_container figure,
+.gal_img_container iframe {
   width: 100%;
   height: 300px;
   overflow: hidden;
+
   border-radius: 5px;
   -webkit-border-radius: 5px;
   -moz-border-radius: 5px;
@@ -63,11 +65,13 @@
   -o-border-radius: 5px;
 }
 .gal_img_container figure img {
+  object-position: center;
   height: 100%;
   width: 100%;
 }
 .gal_img_container article {
   margin-top: 1em;
+  display: none;
 }
 .gal_img_container article h4 {
   font-size: var(--tertiary_header);
@@ -77,6 +81,9 @@
   color: var(--black_color);
   margin-top: 0.5em;
 }
+/* #palanpur_iframe {
+  width: min(600px, 100%);
+} */
 
 .hidden {
   display: none;
